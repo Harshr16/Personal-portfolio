@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <title>Document</title>
+
+</head>
+
+<body class="font-[Poppins] bg-[#141A1A]">
+    <!-- Header section -->
+    <header class="fixed top-0 left-0 right-0 bg-gray-900 bg-opacity-90 backdrop-blur-md z-50 shadow-md">
+        <nav class="max-w-7xl mx-auto p-5">
+            <div class="flex justify-between items-center">
+                <a href="#home" class="text-white flex items-center gap-3 text-2xl font-bold"><img src="Logo.svg"
+                        alt="Logo">My Portfolio</a>
+
+                <div class="hidden md:flex space-x-10">
+                    <a href="#home" class="nav-link text-white hover:text-blue-400">Home</a>
+                    <a href="#about" class="nav-link text-white hover:text-blue-400">About</a>
+                    <a href="#project" class="nav-link text-white hover:text-blue-400">Project</a>
+                    <a href="#contact" class="nav-link text-white hover:text-blue-400">Contact Us</a>
+                </div>
+
+                <button id="mobile-menu-button" class="md:hidden">
+                    <i class="fa-solid fa-bars text-white text-2xl"></i>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden mt-2 space-y-2">
+                <a href="#home" class="nav-link block text-white hover:bg-blue-800 py-2 px-4">Home</a>
+                <a href="#about" class="nav-link block text-white hover:bg-blue-800 py-2 px-4">About</a>
+                <a href="#project" class="nav-link block text-white hover:bg-blue-800 py-2 px-4">Project</a>
+                <a href="#contact" class="nav-link block text-white hover:bg-blue-800 py-2 px-4">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner/home  section -->
+    <section id="home" class="max-w-7xl mx-auto px-5 mt-30">
+        <div class="py-10 text-white flex flex-col md:flex-row justify-between items-center gap-4">
+            <!-- Left side -->
+            <div class="md:w-1/2">
+                <p class="text-xl font-[Inter] font-medium mb-4">Hello, <span
+                        class="text-blue-800 font-medium">I'm</span></p>
+                <h1 class="text-4xl font-bold font-[Inter] mb-5 tracking-[3.22px]">Harsh Rudani</h1>
+                <p class="text-2xl font-[Monstserrat] mb-5">Web Developer and Data Analyst</p>
+                <p class="teext-xl mb-12 md:w-auto text-justify leading-8">I am a Fourth-year Btech student with a solid
+                    background in computer science and a strong passion for solving
+                    problems. I have excellent communication skills and can work efficiently in a team. I am eager to
+                    contribute to a progressive organization and make a significant impact.
+                </p>
+                <button class="bg-blue-800 rounded-md px-10 py-4 hover:bg-blue-600">Lets Talk</button>
+
+                <!-- Social button -->
+                <div class="mt-12 mb-10 flex items-center gap-4 ">
+                    <p>Check out My:</p>
+                    <div class=" flex items-center space-x-3">
+                        <a href="/"><img src="instagram.svg" alt="" class="w-8 h-8"></a>
+                        <a href="/"><img src="linkedIn.svg" alt="" class="w-8 h-8"></a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Right side -->
+            <div class="md:mr-30 md:w-1/2 order-first md:order-none">
+                <img src="WhatsApp_Image_2025-02-11_at_01.32.51-removebg-preview.png" alt=""
+                    class=" md:ml-20 rounded-b-full rounded-t-full bg-indigo-300 w-full">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Service Section -->
+    <section id="about" class="max-w-7xl mx-auto px-5 my-6 text-white">
+        <div class="text-center">
+            <p class="text-xl mb-3 font-[Monstserrat] font-medium">My Services</p>
+            <h3 class="text-3xl font-[Inter] text-blue-800 font-bold mb-16">What I Do</h3>
+        </div>
+
+        <!-- Service Cards -->
+        <div class="flex flex-col  md:flex-row justify-around items-center gap-12 my-12">
+            <div
+                class="w-[354px] px-5 py-8 rounded-lg border border-blue-400 shadow-[#5dadec3b] cursor-pointer shadow-xl">
+                <img src="graphic-design.svg" alt="" class="w-[196px] mb-12 mx-auto">
+                <h5 class="text-center my-6 text-2xl">Web Developer</h5>
+                <p class="text-justify ">A passionate Web Designer with a knack for creating visually stunning and
+                    user-friendly websites. I blend creativity with functionality to craft intuitive interfaces that
+                    leave a lasting impression. With expertise in HTML, CSS, JavaScript, and modern design tools, I turn
+                    ideas into responsive, engaging digital experiences.</p>
+            </div>
+            <div
+                class="w-[354px] px-5 py-8 rounded-lg border border-blue-400 shadow-[#5dadec3b] cursor-pointer shadow-xl">
+                <img src="web-design.svg" alt="" class="w-[196px] mb-12 mx-auto">
+                <h5 class="text-center my-6 text-2xl">Data Analyst</h5>
+                <p class="text-justify ">A dedicated Data Analyst with a strong background in Python, SQL, and data
+                    visualization tools like Power BI and Tableau. I specialize in transforming raw data into meaningful
+                    insights, helping businesses make data-driven decisions.My passion lies in uncovering patterns and
+                    delivering actionable strategies through predictive models and analytics. </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Project Section -->
+    <section id="project" class="max-w-7xl mx-auto px-5 my-32">
+        <div class="text-center text-white">
+            <h3 class="text-2xl font-[Inter] font-bold mb-4">Recent <span class="text-blue-800"> Projects</span></h3>
+            <p class="mb-12 md:w-3/4 mx-auto md:px-12 font-[Monstserrat]">I bring a passion for creating user-friendly
+                experiences and a drive design trends and technologies to deliver top-notch designs that meet needs and
+                exceed their expectations.</p>
+        </div>
+
+        <!-- Project Cards -->
+        <div class="flex flex-col md:flex-row justify-between items-center gap-12 my-12">
+            <!-- Box 1 -->
+            <div
+                class="border border-blue-400 shadow-[#5dadec3b] shadow-xl rounded-lg w-[741px] h-[300px] flex items-center justify-center p-5">
+                <video controls
+                    class="h-full w-full object-cover cursor-pointer hover:scale-105 transition-transform duration-300 rounded-md">
+                    <source src="NasaSpaceApp_video.mov" type="video/quicktime">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Box 2 -->
+            <div
+                class="border border-blue-400 shadow-[#5dadec3b] shadow-xl rounded-lg w-[741px] h-[300px] flex items-center justify-center p-5">
+                <video controls
+                    class="h-full w-full object-cover cursor-pointer hover:scale-105 transition-transform duration-300 rounded-md">
+                    <source src="ToDoList_videeo.mov" type="video/quicktime">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- footer section -->
+    <footer id="contact" class="max-w-7xl mx-auto px-5 my-16">
+        <h4 class="text-2xl text-white mb-12 pt-12 hover:text-slate-300">Portfolio</h4>
+        <div class="gap-6 text-white flex flex-col md:flex-row justify-between md:items-center md:ml-5">
+            <div class="md:w-/3">
+                <h5 class="text-xl font-medium  mb-4 hover:text-slate-300 cursor-pointer">Company</h5>
+                <a href="#" class="block text-sm text-slate-300 my-2 hover:text-slate-200 cursor-pointer">Home</a>
+                <a href="#" class="block text-sm text-slate-300 my-2 hover:text-slate-200 cursor-pointer">Why Choose
+                    me</a>
+                <a href="#" class="block text-sm text-slate-300 my-2 hover:text-slate-200 cursor-pointer">Pricing</a>
+                <a href="#"
+                    class="block text-sm text-slate-300 my-2 hover:text-slate-200 cursor-pointer">Testimonial</a>
+            </div>
+            <div class="md:w-/3">
+                <h5 class="text-xl font-medium  mb-4 hover:text-slate-300 cursor-pointer">Resources</h5>
+                <a href="#" class="block text-sm text-slate-300 my-2 hover:text-slate-200 cursor-pointer">Privacy
+                    Policy</a>
+                <a href="#" class="block text-sm text-slate-300 my-2 hover:text-slate-200 cursor-pointer">Terms and
+                    Condition</a>
+                <a href="#" class="block text-sm text-slate-300 my-2 hover:text-slate-200 cursor-pointer">Blog</a>
+                <a href="#" class="block text-sm text-slate-300 my-2 hover:text-slate-200 cursor-pointer">Contact us</a>
+            </div>
+            <div class="md:w-/3">
+                <h5 class="mb-5 hover:text-slate-300">Subscribe to our Newsletter</h5>
+                <div class="relative">
+                    <input type="email" id="email" name="email" placeholder="Enter your Email"
+                        class="bg-[#2B2E3C] pl-5 py-5 rounded-lg">
+                    <input type="submit" value="Subscribe Me" id="submit" class=" px-3 py-4 
+                    rounded-lg bg-blue-800 absolute left-80 top-1 cursor-pointer hover:bg-blue-600">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script src="https://kit.fontawesome.com/fa479ba83d.js" crossorigin="anonymous"></script>
+<script src="script5.js"></script>
+
+</html>
